@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: hsl(168, 46%, 34%);
+    --lightgreen: hsl(168, 46%, 60%);
+}
+
+@font-face {
+    font-family: text-font;
+    src: url(./Assets/CONSOLAB.TTF);
+}
+
+body {
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+    font-family: "Consolas", text-font;
+    color: black;
+}
+
+main {
+    width: 40%;
+    min-width: 700px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background-color: white;
+    border-radius: 15px;
+    border: 5px solid var(--green);
+    text-align: center;
+    opacity: 0.9;
+}
+
+main:hover {
+    opacity: 1;
+}
+
+.title {
+    padding: 2rem 0;
+    font-size: 4rem;
+    letter-spacing: 10px;
+    color: var(--green)
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.user-input {
+    padding-left: 10px;
+    height: 4.5rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.user-input:is(:active, :focus) {
+    box-shadow: 0 0 8px var(--green);
+    outline: none;
+}
+
+.submit {
+    width: 45%;
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+    position: relative;
+    background-color: transparent;
+    border: 3px solid var(--green);
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 
+        background-color 0.2s ease-out,
+        color 0.2s ease-out;
+}
+
+.submit:hover {
+    background-color: var(--green);
+    color:white;
+}
+
+.pokemon-name {
+    margin: 50px 0;
+    font-size: 5rem;
+    letter-spacing: 10px;
+}
+
+.pokemon-image {
+    transform: scale(1.8);
+    background-color: hsl(0, 0%, 85%);
+    border-radius: 15px;
+    transition: background-color 0.2s ease-out;
+}
+
+.pokemon-image:hover {
+    background-color: var(--green);
+}
+
+.pokemon-table {
+    width: 80%;
+    margin: 64px auto 32px auto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    gap: 2rem;
+    cursor: default;
+}
+
+.pokemon-table tr {
+    transition: background-color 0.2s ease-out;
+}
+
+.pokemon-table tr:nth-of-type(odd) {
+    background-color: hsl(0, 0%, 85%);
+}
+
+.pokemon-table tr:hover {
+    background-color: var(--lightgreen);
+}
+
+.pokemon-table tr td:nth-of-type(2), .list {
+    color:hsl(196, 93%, 30%);
+    font-weight: normal;
+}
+
+.pokemon-table td {
+    width: 50%;
+    padding: 0.7rem 1.5rem;
+}
+
+.pokemon-moves {
+    text-align: center;
+}
+
+.pokemon-moves li {
+    list-style-type: none;
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 12px;
+    }
+
+    main {
+        min-width: 400px;
+    }
+}

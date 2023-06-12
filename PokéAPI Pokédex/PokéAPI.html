@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-PokéAPI.css">
+    <title>Pokédex with PokéAPI</title>
+</head>
+<body>
+    <main>
+
+        <!-- Intro: title, input, and search button-->
+        <section>
+          <h1 class="title">POKÉAPI</h1>
+          <form class="form">
+              <input class="user-input" type="text" spellcheck="false" placeholder="Enter Pokemon name" />
+              <button class="submit" type="submit">Search!</button>
+          </form>
+        </section>
+
+        <!-- Main pokémon info -->
+        <section>
+          <h2 class="pokemon-name"></h2>
+          <img class="pokemon-image">
+
+          <table class="pokemon-table">
+            <tr>
+              <td>Base exp</td>
+              <td class="table-cells"></td>
+            </tr>
+            <tr>
+              <td>Pokémon ID</td>
+              <td class="table-cells"></td>
+            </tr>
+            <tr>
+              <td>Pokémon type</td>
+              <td class="table-cells"></td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td class="table-cells"></td>
+            </tr>
+            <tr>
+              <td>Previous Pokémon</td>
+              <td class="table-cells"></td>
+            </tr>
+            <tr>
+              <td>Next Pokémon</td>
+              <td class="table-cells"></td>
+            </tr>
+            <tr>
+              <td class="table-cells pokemon-moves" colspan="2">Available Moves</td>
+            </tr>
+            <tr>
+              <td class="table-cells pokemon-moves list" colspan="2">
+                <li></li>
+                <li></li>
+                <li></li>
+              </td>
+            </tr>
+          </table>
+        </section>
+    </main>
+
+  <script src="scripts-PokéAPI.js"></script>    
+</body>
+</html>
