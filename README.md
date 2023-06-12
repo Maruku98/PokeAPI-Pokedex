@@ -1,9 +1,9 @@
 # PokéAPI Pokédex
-Get Pokémon data from PokéAPI!<br></br>
+Get Pokémon data from PokéAPI! 🤩<br></br>
 <img src="https://github.com/Maruku98/PokeAPI-Pokedex/assets/133391272/6c457265-720a-4399-8254-b59516454a4c" height="600">
 
 ## Overview
-Consuming `RESTful APIs` is one of the key skills that every front-end developer should have. After getting familiar with promises and asynchronous language, I decided I wanted to develop a project that involved consuming an `API` of my choice and letting the user interact with its information.<br></br> Since I played Pokémon a lot when I was a child —more specifically, **Pokémon Mystery Dungeon: Blue Rescue Team**— I chose PokéAPI, a free `RESTful` `API` connected to an extensive database detailing everything about the Pokémon main game series: Pokémon names, their stats, their living areas, and so on!
+Consuming `RESTful` `APIs` is one of the key skills that every front-end developer should have. After getting familiar with promises and asynchronous language, I decided I wanted to develop a project that involved consuming an `API` of my choice and letting the user interact with its information.<br></br> Since I played Pokémon a lot when I was a child —more specifically, **Pokémon Mystery Dungeon: Blue Rescue Team**— I chose PokéAPI, a free `RESTful` `API` connected to an extensive database detailing everything about the Pokémon main game series: Pokémon names, their stats, their living areas, and so on!
 ⚠️I've always been fond of Pokémon up to the third generation, so the latest Pokémon that the user can retrieve data from is `Deoxys-Normal` (number 386).
 
 ## PROGRAMMING LANGUAGES USED
