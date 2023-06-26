@@ -86,8 +86,8 @@ function getPokemonData(element, beforeIndex, afterIndex) {
     };
 
     //Display pokémons that are one position before and after the searched one
-    tableCells[4].innerText = fetchedPokemons[beforeIndex].name.toUpperCase();
-    tableCells[5].innerText = fetchedPokemons[afterIndex].name.toUpperCase();
+    tableCells[4].innerText = fetchedPokemons[beforeIndex] ? fetchedPokemons[beforeIndex].name.toUpperCase() : "";
+    tableCells[5].innerText = fetchedPokemons[afterIndex] ? fetchedPokemons[afterIndex].name.toUpperCase() : "";
 
     //Reset input and extit function
     input.value = "";
